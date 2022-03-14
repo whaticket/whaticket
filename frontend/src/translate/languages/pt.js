@@ -266,7 +266,8 @@ const messages = {
         assignedHeader: "Conversas abertas",
         noTicketsTitle: "Nenhuma conversa",
         noTicketsMessage:
-          "Nenhuma conversa encontrada com esse status ou termo pesquisado.",
+          "Nenhum ticket encontrado com esse status ou termo pesquisado",
+        connectionTitle: "Conexão que está sendo utilizada atualmente.",
         buttons: {
           accept: "Responder",
         },
