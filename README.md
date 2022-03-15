@@ -1,4 +1,4 @@
-# WhaTicket 🐱‍👤
+# WhaTicket 🥷
 📝 O backend usa [whatsapp-web.js](https://github.com/pedroslopez/whatsapp-web.js) para receber e enviar mensagens do WhatsApp, criar tickets a partir deles e armazenar tudo em um banco de dados MySQL.
 
 📝 _Frontend é um aplicativo de bate-papo_ multiusuário com recursos completos, inicializado com react-create-app e Material UI, que se comunica com o **backend** usando API REST e Websockets. Permite interagir com contatos, tickets, enviar e receber mensagens do WhatsApp.
@@ -21,13 +21,13 @@ A cada nova mensagem recebida em um WhatsApp associado, um novo Ticket é criado
 -   Enviar mídia (imagens/áudio/documentos) ✅
 -   Receber mídia (imagens/áudio/vídeo/documentos) ✅
 
-### 🐱‍👤Extras:
+### 🥷 Extras:
 - Ignore mensagens de grupos ✅🆕
 - Altere tempo para criação de um novo ticket ✅🆕
 - Ignore chamadas de áudio/vídeo ✅🆕
 - Associe uma conexão padrão ao usuário ✅🆕
 - Transferência de tickets para outra conexão ✅🆕
-- Mais em [ Whaticket Grupo Vip](https://chat.whatsapp.com/Cmsh3jAU4DQGB0L32zIBHb) 🐱‍👤 | [whaticket.online](https://whaticket.online/) | [ZAP das Galáxias](https://www.youtube.com/channel/UCrPbAoQKz42Gm0mLdWatAEA)
+- Mais em [ Whaticket Grupo Vip](https://chat.whatsapp.com/Cmsh3jAU4DQGB0L32zIBHb) 🥷 | [whaticket.online](https://whaticket.online/) | [ZAP das Galáxias](https://www.youtube.com/channel/UCrPbAoQKz42Gm0mLdWatAEA)
 ***Todos os direitos reservados a seus respectivos criadores.*** ❤️
 
 ## 💯 Instalação e Configuração (Ubuntu)
