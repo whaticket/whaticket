@@ -1,4 +1,4 @@
-# WhaTicket 🥷
+# WhaTicket NINJA 🥷
 📝 O backend usa [whatsapp-web.js](https://github.com/pedroslopez/whatsapp-web.js) para receber e enviar mensagens do WhatsApp, criar tickets a partir deles e armazenar tudo em um banco de dados MySQL.
 
 📝 _Frontend é um aplicativo de bate-papo_ multiusuário com recursos completos, inicializado com react-create-app e Material UI, que se comunica com o **backend** usando API REST e Websockets. Permite interagir com contatos, tickets, enviar e receber mensagens do WhatsApp.
