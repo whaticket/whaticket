@@ -27,8 +27,8 @@ A cada nova mensagem recebida em um WhatsApp associado, um novo Ticket é criado
 - Ignore chamadas de áudio/vídeo ✅🆕
 - Associe uma conexão padrão ao usuário ✅🆕
 - Transferência de tickets para outra conexão ✅🆕
-- Mais em [ Whaticket Grupo Vip](https://chat.whatsapp.com/Cmsh3jAU4DQGB0L32zIBHb) 🥷 | [whaticket.online](https://whaticket.online/) | [ZAP das Galáxias](https://www.youtube.com/channel/UCrPbAoQKz42Gm0mLdWatAEA)
-***Todos os direitos reservados a seus respectivos criadores.*** ❤️
+- Mais em [ Grupo Whaticket NINJA 🥷](https://telinkei.com/whaticket-zap) 🥷 | [whaticket.online](https://whaticket.online/) | [ZAP das Galáxias](https://www.youtube.com/channel/UCrPbAoQKz42Gm0mLdWatAEA)
+***Todos os direitos reservados a seus respectivos criadores.*** ❤️ - GP Whaticket NINJA DEVS 🥷
 
 ## 💯 Instalação e Configuração (Ubuntu)
 
@@ -116,13 +116,11 @@ This code is in no way affiliated with, authorized, maintained, sponsored or end
 
 ### WhatsApp
 
--   [Whaticket - Grupo VIP  ](https://chat.whatsapp.com/Cmsh3jAU4DQGB0L32zIBHb) 
--   [Whaticket livre](https://chat.whatsapp.com/Kir4aJtQplIEk3nYjefZO6)
+-   [Grupo Whaticket NINJA 🥷  ](https://telinkei.com/whaticket-zap) 
 
 ### Telegram
 
--   [Whaticket - Grupo VIP  ](https://t.me/+lEF1Ni53L2o3ZjFh) 
--   [Whaticket](https://t.me/+nwZmoBxfOhZiMmUx)
+-   [Grupo Whaticket NINJA 🥷 ](https://telinkei.com/whaticket-tg)
 
 
 ### *Todos os direitos reservados aos seus respectivos autores* ❤️
