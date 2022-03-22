@@ -7,7 +7,7 @@ import InputBase from "@material-ui/core/InputBase";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Badge from "@material-ui/core/Badge";
-import Comment from "@material-ui/icons/Comment";
+import MoveToInboxIcon from "@material-ui/icons/MoveToInbox";
 import CheckBoxIcon from "@material-ui/icons/CheckBox";
 
 import FormControlLabel from "@material-ui/core/FormControlLabel";
@@ -170,8 +170,14 @@ const TicketsManager = () => {
         >
           <Tab
             value={"open"}
-            icon={<Comment />}
+            icon={<MoveToInboxIcon />}
             label={i18n.t("tickets.tabs.open.title")}
+            classes={{ root: classes.tab }}
+          />
+          <Tab
+            value={"closed"}
+            icon={<CheckBoxIcon />}
+            label={i18n.t("tickets.tabs.closed.title")}
             classes={{ root: classes.tab }}
           />
           <Tab
@@ -281,6 +287,13 @@ const TicketsManager = () => {
             style={applyPanelStyle("pending")}
           />
         </Paper>
+      </TabPanel>
+      <TabPanel value={tab} name="closed" className={classes.ticketsWrapper}>
+        <TicketsList
+          status="closed"
+          showAll={true}
+          selectedQueueIds={selectedQueueIds}
+        />
       </TabPanel>
       <TabPanel value={tab} name="search" className={classes.ticketsWrapper}>
         <TicketsList
