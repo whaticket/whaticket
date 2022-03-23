@@ -241,7 +241,7 @@ const messages = {
           search: { title: "Buscar" },
         },
         search: {
-          placeholder: "Buscar conversas e mensagens",
+          placeholder: "Buscar conversas/mensagens",
         },
         buttons: {
           showAll: "Todos",
@@ -259,7 +259,7 @@ const messages = {
         },
       },
       ticketsList: {
-        pendingHeader: "Aguardando resposta",
+        pendingHeader: "Aguardando",
         assignedHeader: "Conversas abertas",
         noTicketsTitle: "Nenhuma conversa",
         noTicketsMessage:
