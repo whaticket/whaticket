@@ -37,7 +37,7 @@ A cada nova mensagem recebida em um WhatsApp associado, um novo Ticket é criado
     sudo apt-get install -y libxshmfence-dev libgbm-dev wget unzip fontconfig locales gconf-service libasound2 libatk1.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2 0,0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc ++ 6 libx11-6 libx11-6 libx11-6 libxcb1 libxComposite1 libxCursor1 libxDamage1 libxext6 libxfixes3 libxi6 libxRandr2 libxrender1 libxss1 libxxrender1 CA-Certificados fontes-Libertação -release xdg-utils
 
 ###  💣 Clonar este repositório
-    git clone https://github.com/whaticket/whaticketvip whaticketvip 
+    git clone https://github.com/whaticket/whaticket-community.git whaticket-community 
 
 Vá para a pasta ***backend*** e edite o arquivo `.env`:
 
@@ -51,7 +51,7 @@ Vá para a pasta ***backend*** e edite o arquivo `.env`:
     DB_HOST=localhost
     DB_USER=root
     DB_PASS=
-    DB_NAME=wpp
+    DB_NAME=whaticket
     
     JWT_SECRET=3123123213123
     JWT_REFRESH_SECRET=75756756756
@@ -86,6 +86,7 @@ Instale as dependências do ***frontend***:
 
 -   Vá para `http://localhost_ou_ip:3000/signup`
 -   Crie um usuário e faça login com ele.
+-   Na barra lateral, acessa a página _Filas_ e crie sua primeira fila de atendimento.
 -   Na barra lateral, acesse a página _Conexões_ e crie sua primeira conexão do WhatsApp.
 -   Aguarde o botão QR CODE aparecer, clique nele e leia o código qr.
 -   Feito. Todas as mensagens recebidas pelo seu número do WhatsApp sincronizado aparecerão na Lista Tickets.
