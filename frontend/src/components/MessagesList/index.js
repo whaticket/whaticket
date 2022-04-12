@@ -30,6 +30,7 @@ import whatsBackground from "../../assets/wa-background.png";
 
 import api from "../../services/api";
 import toastError from "../../errors/toastError";
+import Audio from "../Audio";
 
 const useStyles = makeStyles((theme) => ({
   messagesListWrapper: {
@@ -488,11 +489,7 @@ const MessagesList = ({ ticketId, isGroup }) => {
   else if (message.mediaType === "image") {
       return <ModalImageCors imageUrl={message.mediaUrl} />;
     } else if (message.mediaType === "audio") {
-      return (
-        <audio controls>
-          <source src={message.mediaUrl} type="audio/ogg"></source>
-        </audio>
-      );
+      return <Audio url={message.mediaUrl} />
     } else if (message.mediaType === "video") {
       return (
         <video
