@@ -219,7 +219,6 @@ const LoggedInLayout = ({ children }) => {
           >
             Whatsapp
           </Typography>
-          {user.id && <NotificationsPopOver />}
 
           <div>
             <IconButton

@@ -68,7 +68,7 @@ const useStyles = makeStyles(theme => ({
 		alignSelf: "center",
 		justifySelf: "flex-end",
 		marginRight: 32,
-		marginLeft: "auto",
+		marginLeft: 22,
 	},
 
 	contactLastMessage: {
@@ -102,12 +102,12 @@ const useStyles = makeStyles(theme => ({
 
 	userTag: {
 		position: "absolute",
-		marginRight: 5,
-		right: 5,
-		bottom: 5,
-		background: "#2576D2",
+		marginRight: 45,
+		right: 10,
+		bottom: 20,
+		background:"#00A884",
 		color: "#ffffff",
-		border: "1px solid #CCC",
+		border:"0px solid #CCC",
 		padding: 1,
 		paddingLeft: 5,
 		paddingRight: 5,
@@ -190,7 +190,7 @@ const TicketListItem = ({ ticket }) => {
 							>
 								{ticket.contact.name}
 							</Typography>
-							{ticket.status === "closed" && (
+							{ticket.status === "Encerrado" && (
 								<Badge
 									className={classes.closedBadge}
 									badgeContent={"closed"}
@@ -211,8 +211,8 @@ const TicketListItem = ({ ticket }) => {
 									)}
 								</Typography>
 							)}
-							{ticket.whatsappId && (
-								<div className={classes.userTag} title={i18n.t("ticketsList.connectionTitle")}>{ticket.whatsapp?.name}</div>
+							{ticket?.whatsapp && (
+								<div className={classes.userTag} title={i18n.t("ticketsList.connectionTitle")}>{ticket.whatsapp.name}</div>
 							)}
 						</span>
 					}

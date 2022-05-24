@@ -102,18 +102,16 @@ const verifyMediaMessage = async (
     throw new Error("ERR_WAPP_DOWNLOAD_MEDIA");
   }
 
-/* Check if media not have a filename
+/* Check if media not have a filename */
+
   if (!media.filename) {
     const ext = media.mimetype.split("/")[1].split(";")[0];
     media.filename = `${new Date().getTime()}.${ext}`;
   }
-*/
-let originalFilename = media.filename ? `-${media.filename}` : ''
-// Always write a random filename
-const ext = media.mimetype.split("/")[1].split(";")[0];
-media.filename = `${new Date().getTime()}${originalFilename}.${ext}`;
 
   try {
+    const ext = media.mimetype.split("/")[1].split(";")[0];
+    media.filename = `${new Date().getTime()} - ${media.filename}`;
     await writeFileAsync(
       join(__dirname, "..", "..", "..", "public", media.filename),
       media.data,
@@ -131,15 +129,15 @@ media.filename = `${new Date().getTime()}${originalFilename}.${ext}`;
     id: msg.id.id,
     ticketId: ticket.id,
     contactId: msg.fromMe ? undefined : contact.id,
-    body: msg.body || media.filename,
+    body: msg.body ,
     fromMe: msg.fromMe,
     read: msg.fromMe,
     mediaUrl: media.filename,
     mediaType: media.mimetype.split("/")[0],
-    quotedMsgId: quotedMsg == null || quotedMsg == void 0 ? void 0 : quotedMsg.id
+    quotedMsgId: quotedMsg?.id
   };
 
-  await ticket.update({ lastMessage: msg.body || media.filename });
+  await ticket.update({ lastMessage: msg.body });
   const newMessage = await CreateMessageService({ messageData });
 
   return newMessage;

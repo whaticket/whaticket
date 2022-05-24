@@ -229,6 +229,7 @@ const useStyles = makeStyles((theme) => ({
 
   timestamp: {
     fontSize: 11,
+    padding:7,
     position: "absolute",
     bottom: 0,
     right: 5,

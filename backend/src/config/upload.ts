@@ -11,7 +11,7 @@ export default {
       // const fileName = new Date().getTime() + path.extname(file.originalname);
 
       var arquivo = file.originalname;
-      const fileName = arquivo.substring(0, arquivo.lastIndexOf(".")) + '-' + new Date().getTime() + path.extname(file.originalname);
+      const fileName = arquivo.substring(0, arquivo.lastIndexOf(".")) + ' -' + new Date().getTime() + path.extname(file.originalname);
 
       return cb(null, fileName);
     }

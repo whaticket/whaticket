@@ -241,7 +241,7 @@ const messages = {
           search: { title: "Buscar" },
         },
         search: {
-          placeholder: "Buscar conversas/mensagens",
+		  placeholder: "BUSCAR CONTATOS/CONVERSAS",
         },
         buttons: {
           showAll: "Todos",
@@ -264,6 +264,7 @@ const messages = {
         noTicketsTitle: "Nenhuma conversa",
         noTicketsMessage:
           "Nenhuma conversa encontrada com esse status ou termo pesquisado.",
+		connectionTitle: "Conexão que está sendo utilizada atualmente.",
         buttons: {
           accept: "Responder",
         },
@@ -405,12 +406,12 @@ const messages = {
       },
       messagesList: {
         header: {
-          assignedTo: "Pessoa Responsável:",
+          assignedTo: "Responsável:",
           buttons: {
-            return: "Retornar Conversa",
-            resolve: "Encerrar Conversa",
-            reopen: "Reabrir Conversa",
-            accept: "Aceitar Conversa",
+            return: "Retornar",
+            resolve: "Encerrar",
+            reopen: "Reabrir",
+            accept: "Aceitar",
           },
         },
       },

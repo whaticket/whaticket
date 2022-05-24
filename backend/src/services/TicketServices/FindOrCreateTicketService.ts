@@ -1,10 +1,8 @@
-// import { subHours } from "date-fns";
-const add = require('date-fns/add')
+import { subHours } from "date-fns";
 import { Op } from "sequelize";
 import Contact from "../../models/Contact";
 import Ticket from "../../models/Ticket";
 import ShowTicketService from "./ShowTicketService";
-import ListSettingsServiceOne from "../SettingServices/ListSettingsServiceOne";
 
 const FindOrCreateTicketService = async (
   contact: Contact,
@@ -17,7 +15,8 @@ const FindOrCreateTicketService = async (
       status: {
         [Op.or]: ["open", "pending"]
       },
-      contactId: groupContact ? groupContact.id : contact.id
+      contactId: groupContact ? groupContact.id : contact.id,
+      whatsappId: whatsappId
     }
   });
 
@@ -28,7 +27,8 @@ const FindOrCreateTicketService = async (
   if (!ticket && groupContact) {
     ticket = await Ticket.findOne({
       where: {
-        contactId: groupContact.id
+        contactId: groupContact.id,
+        whatsappId: whatsappId
       },
       order: [["updatedAt", "DESC"]]
     });
@@ -43,16 +43,13 @@ const FindOrCreateTicketService = async (
   }
 
   if (!ticket && !groupContact) {
-    const listSettingsService = await ListSettingsServiceOne({key: "timeCreateNewTicket"});
-    var timeCreateNewTicket = listSettingsService?.value;
-
-
     ticket = await Ticket.findOne({
       where: {
         updatedAt: {
-          [Op.between]: [+add(new Date(), {seconds: timeCreateNewTicket}), +new Date()]
+          [Op.between]: [+subHours(new Date(), 2), +new Date()]
         },
-        contactId: contact.id
+        contactId: contact.id,
+        whatsappId: whatsappId
       },
       order: [["updatedAt", "DESC"]]
     });
