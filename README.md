@@ -45,20 +45,23 @@ A cada nova mensagem recebida em um WhatsApp associado, um novo Ticket é criado
 
 Vá para a pasta **_backend_** e edite o arquivo `.env`:
 
-    NODE_ENV=
-    BACKEND_URL=http://localhost
-    FRONTEND_URL=http://localhost:3000
-    PROXY_PORT=8080
-    PORT=8080
+    	NODE_ENV=
+    	BACKEND_URL=http://localhost
+    	FRONTEND_URL=http://localhost:3000
+    	PROXY_PORT=8080
+    	PORT=8080
 
-    DB_DIALECT=mysql
-    DB_HOST=localhost
-    DB_USER=root
-    DB_PASS=
-    DB_NAME=whaticket
+    	DB_DIALECT=mysql
+    	DB_HOST=localhost
+    	DB_PORT=3306
+    	DB_USER=root
+    	DB_PASS=
+    	DB_NAME=wpp
 
-    JWT_SECRET=3123123213123
-    JWT_REFRESH_SECRET=75756756756
+    	JWT_SECRET=3123123213123
+    	JWT_REFRESH_SECRET=75756756756
+
+    	MESSAGES_LIMIT=20
 
 Instale dependências de **_backend_**, _build o app, execute as migrações e seeds_ do banco de dados:
 
