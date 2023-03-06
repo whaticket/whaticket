@@ -48,9 +48,6 @@ services:
       - BACKEND_SERVER_NAME=${BACKEND_SERVER_NAME}
       - REACT_APP_HOURS_CLOSE_TICKETS_AUTO=${FRONTEND_HOURS:-24}
       - PORT=${FRONTEND_PORT:-80}
-    volumes:
-      - ./ssl/certs/:/etc/nginx/ssl/
-      - ./ssl/www/:/var/www/letsencrypt/
     networks:
       - whaticket
 
