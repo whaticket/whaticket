@@ -68,3 +68,9 @@ services:
     restart: always
     networks:
       - whaticket
+
+# Descobrindo o container
+# docker ps -a --format "table {{.ID}}\t{{.Image}}\t{{.Names}}"
+
+# Criar um contêiner
+# docker compose -f docker-compose.yml up --build -d
