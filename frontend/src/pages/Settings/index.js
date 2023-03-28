@@ -143,6 +143,9 @@ const Settings = () => {
 							className={classes.settingOption}
 							onChange={handleChangeSetting}
 						>
+							<option value="0">
+								{i18n.t("settings.settings.timeCreateNewTicket.options.0")}
+							</option>
 							<option value="10">
 								{i18n.t("settings.settings.timeCreateNewTicket.options.10")}
 							</option>

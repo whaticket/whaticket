@@ -375,6 +375,7 @@ const messages = {
             name: "Mensagem de boas-vindas após",
             note: "Selecione o tempo que será necessário para abrir um novo ticket, caso o cliente entre em contatos novamente",
             options: {
+              "0": "Desabilitado",
               "10": "10 Segundos",
               "30": "30 Segundos",
               "60": "1 minuto",

@@ -26,7 +26,7 @@ const ListMessagesService = async ({
   }
 
 // await setMessagesAsRead(ticket);
-const limit = 20;
+const limit = process.env.MESSAGES_LIMIT ? process.env.MESSAGES_LIMIT : 20;
 const offset = limit * (+pageNumber - 1);
 
 const { count, rows: messages } = await Message.findAndCountAll({
